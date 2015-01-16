@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mocca_capstone.potlatch" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-feature android:name="android.hardware.camera" android:required="true" />
+
+    <application
+        android:name=".application.PotlatchApp"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/Theme.AppTheme" >
+        <provider
+            android:label="@string/app_name"
+            android:name=".contentprovider.PotlatchProvider"
+            android:authorities="com.mocca_capstone.potlatch.provider"
+            android:exported="false"
+            android:syncable="true"
+            />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"
+            />
+
+        <!-- Activities -->
+        <activity
+            android:name=".views.MainActivity"
+            android:label="@string/app_name">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".views.SearchActivity" />
+        </activity>
+        <activity
+            android:name=".views.SearchActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data android:name="android.app.searchable"
+                       android:resource="@xml/searchable" />
+        </activity>
+
+        <activity
+            android:name=".views.AddGiftActivity"
+            android:exported="false"
+            android:label=""
+            android:theme="@style/Theme.BlackSystemBar"
+            />
+        <activity
+            android:name=".views.DisplayPictureActivity"
+            android:exported="false"
+            android:label=""
+            android:theme="@style/Theme.BlackSystemBar"
+            />
+        <activity
+            android:name=".views.GiftDetailsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.BlackSystemBar"
+            />
+        <activity
+            android:name=".views.ProfileActivity"
+            android:exported="false"
+            android:theme="@style/Theme.BlackSystemBar"
+            />
+        <activity
+            android:name=".views.RankingDetailsActivity"
+            android:exported="false"
+            />
+        <activity
+            android:name=".views.LoginActivity"
+            android:exported="false"
+            android:label=""
+            />
+        <activity
+            android:name=".views.SettingsActivity"
+            android:label="@string/settings"
+            android:theme="@style/Theme.NoHideActionBar"
+            />
+
+        <!-- Services -->
+        <service android:name=".sync.AuthenticatorService" >
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accounts.AccountAuthenticator"
+                android:resource="@xml/authenticator" />
+        </service>
+        <service
+            android:name=".sync.SyncService"
+            android:exported="true"
+            android:process=":sync" >
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.content.SyncAdapter"
+                android:resource="@xml/syncadapter" />
+        </service>
+        <service
+            android:name=".network.ApiTaskService"
+            android:exported="false"
+            />
+    </application>
+</manifest>

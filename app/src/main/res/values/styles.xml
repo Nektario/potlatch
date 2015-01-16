@@ -1,0 +1,73 @@
+<resources>
+    <style name="toolbar_actionbar_title" parent="@style/typography_display_1">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:textColor">@color/actionbar_title_text</item>
+    </style>
+    <style name="toolbar_actionbar_subtitle" parent="@style/typography_caption">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/actionbar_subtitle_text</item>
+    </style>
+
+
+    <style name="SeekBarAppTheme" parent="android:Widget.Holo.Light.SeekBar">
+        <item name="android:progressDrawable">@drawable/apptheme_scrubber_progress_horizontal_holo_light</item>
+        <item name="android:indeterminateDrawable">@drawable/apptheme_scrubber_progress_horizontal_holo_light</item>
+        <item name="android:thumb">@drawable/apptheme_scrubber_control_selector_holo_light</item>
+    </style>
+
+    <!-- Text Styles -->
+    <style name="typography_base">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="typography_headline" parent="typography_base">
+        <item name="android:textSize">@dimen/text_size_headline</item>
+        <item name="android:textColor">@color/title_text_1</item>
+    </style>
+    <style name="typography_title" parent="typography_base">
+        <item name="android:textSize">@dimen/text_size_title</item>
+        <item name="android:textColor">@color/title_text_1</item>
+    </style>
+    <style name="typography_title_inverse" parent="typography_title">
+        <item name="android:textColor">@color/title_text_1_inverse</item>
+    </style>
+    <style name="typography_subhead" parent="typography_base">
+        <item name="android:textSize">@dimen/text_size_subhead</item>
+        <item name="android:textColor">@color/body_text_1</item>
+    </style>
+    <style name="typography_subhead_inverse" parent="typography_subhead">
+        <item name="android:textColor">@color/body_text_1_inverse</item>
+    </style>
+    <style name="typography_body" parent="typography_base">
+        <item name="android:textSize">@dimen/text_size_body</item>
+        <item name="android:textColor">@color/body_text_1</item>
+    </style>
+    <style name="typography_body_inverse" parent="typography_body">
+        <item name="android:textColor">@color/body_text_1_inverse</item>
+    </style>
+    <style name="typography_caption" parent="typography_base">
+        <item name="android:textSize">@dimen/text_size_caption</item>
+        <item name="android:textColor">@color/body_text_1</item>
+    </style>
+    <style name="typography_caption_secondary" parent="typography_caption">
+        <item name="android:textColor">@color/body_text_2</item>
+    </style>
+    <style name="typography_display_1" parent="typography_base">
+        <item name="android:textSize">@dimen/text_size_display1</item>
+        <item name="android:textColor">@color/body_text_1</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="typography_display_1_inverse" parent="typography_display_1">
+        <item name="android:textColor">@color/body_text_1_inverse</item>
+    </style>
+    <style name="typography_display_3" parent="typography_base">
+        <item name="android:textSize">@dimen/text_size_display3</item>
+        <item name="android:textColor">@color/body_text_1</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+    <style name="typography_display_3_inverse" parent="typography_display_3">
+        <item name="android:textColor">@color/body_text_1_inverse</item>
+    </style>
+</resources>

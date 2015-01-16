@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Potlatch</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="new_gift_chains_available">New gifts available!  Click to load</string>
+    <string name="login_required">You must be logged in to do that</string>
+    <string name="internet_required">You are not connected to the Internet</string>
+    <string name="settings">Settings</string>
+    <string name="error">Error</string>
+    <string name="error_uploading_gift">Error uploading new gift</string>
+    <string name="no_search_results">Search returned 0 results</string>
+
+    <string name="add_gift_title_hint">Title</string>
+    <string name="add_gift_description_hint">Description</string>
+    <!-- Actionbar -->
+    <string name="action_settings">Settings</string>
+    <string name="action_sort">Sort</string>
+    <string name="action_search">Search</string>
+    <string name="action_star">Follow</string>
+    <string name="action_unstar">Unfollow</string>
+    <string name="action_logout">Logout</string>
+    <string name="search_hint">Search gift titles</string>
+    <string name="menu_new">New</string>
+    <string name="menu_popular">Popular</string>
+
+    <!-- Accessibility -->
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="accessibility_profile_pic">Profile picture</string>
+    <string name="accessibility_profile_expand_button">Expand button</string>
+
+    <!-- Nav Drawer -->
+    <string name="navdrawer_item_home">Gift chains</string>
+    <string name="navdrawer_item_profile">Profile</string>
+    <string name="navdrawer_item_settings">Settings</string>
+    <string name="navdrawer_item_rankings">Top gift givers</string>
+    <string name="navdrawer_item_following">Following</string>
+    <string name="navdrawer_item_favourites">Favorites</string>
+    <string name="user_logged_out">Logged Out</string>
+    <string name="user_logged_out_subtext">touch to log in</string>
+    <string name="user_add_user">+ Add user</string>
+
+    <!-- Login Screen -->
+    <string name="login_title">@string/app_name</string>
+    <string name="login_description">
+        A potlatch is a gift-giving feast practiced by indigenous peoples of the Pacific Northwest Coast of
+        Canada and the United States, among whom it is traditionally the primary economic system.
+    </string>
+    <string name="login_subtitle">paɬaˑč</string>
+
+    <!-- Effects -->
+    <string name="effect_contrast">Contrast</string>
+    <string name="effect_saturation">Saturation</string>
+    <string name="effect_brightness">Brightness</string>
+</resources>

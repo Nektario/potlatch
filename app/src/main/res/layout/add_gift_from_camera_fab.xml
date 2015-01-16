@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:fab="http://schemas.android.com/apk/res-auto">
+
+    <com.melnykov.fab.FloatingActionButton
+        android:id="@+id/add_gift_from_camera_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/keyline_1"
+        android:src="@drawable/ic_action_camera"
+        fab:fab_colorNormal="@color/theme_accent_1"
+        fab:fab_colorPressed="@color/theme_accent_2"
+        fab:fab_colorRipple="@color/theme_accent_1"
+        android:visibility="gone"
+        />
+</merge>

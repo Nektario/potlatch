@@ -1,0 +1,29 @@
+<resources>
+    <dimen name="base_padding_level">8dp</dimen>
+
+    <dimen name="text_size_caption">12sp</dimen>
+    <dimen name="text_size_body">14sp</dimen>
+    <dimen name="text_size_subhead">18sp</dimen>
+    <dimen name="text_size_title">24sp</dimen>
+    <dimen name="text_size_headline">28sp</dimen>
+    <dimen name="text_size_display1">34sp</dimen>
+    <dimen name="text_size_display3">64sp</dimen>
+
+    <dimen name="keyline_1">16dp</dimen>
+    <dimen name="keyline_2">32dp</dimen>
+    <dimen name="keyline_3">72dp</dimen>
+
+    <!-- Action Bar auto-hide-on-scroll behavior parameters -->
+    <dimen name="action_bar_auto_hide_min_y">48dp</dimen>
+    <dimen name="action_bar_auto_hide_sensivity">48dp</dimen>
+
+    <dimen name="action_bar_height">56dp</dimen>
+    <dimen name="action_bar_height_x2">112dp</dimen>
+    <dimen name="action_bar_height_x3">168dp</dimen>
+
+    <!-- Nav Drawer -->
+    <dimen name="navdrawer_width">275dp</dimen>
+    <dimen name="navdrawer_account_box_logged_in_height">120dp</dimen>
+    <dimen name="navdrawer_account_box_logged_out_height">75dp</dimen>
+    <dimen name="navdrawer_profile_image_size">40dp</dimen>
+</resources>

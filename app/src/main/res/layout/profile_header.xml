@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    >
+
+    <com.mocca_capstone.potlatch.widgets.BezelImageView
+        android:id="@+id/profile_profile_pic"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"
+        app:maskDrawable="@drawable/circle_mask"
+        />
+
+    <TextView
+        android:id="@+id/profile_profile_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="@dimen/keyline_1"
+        android:singleLine="true"
+        android:ellipsize="end"
+        style="@style/typography_display_3_inverse"
+        android:text="Jenny Shen"
+        />
+
+    <LinearLayout
+        android:id="@+id/profile_name_and_icons"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:padding="@dimen/base_padding_level"
+        >
+        <!-- Touch & Flag Icons -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <include layout="@layout/gift_icon_groups_nointeract_inverse" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/profile_follow_user"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp"
+        android:padding="13dp"
+        android:clickable="true"
+        android:src="@drawable/ic_action_star"
+        />
+</RelativeLayout>

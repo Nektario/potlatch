@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="swing_from_bottom_animation_duration">650</integer>
+    <integer name="uploaded_gift_card_duration">250</integer>
+</resources>

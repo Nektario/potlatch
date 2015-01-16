@@ -1,0 +1,53 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.mocca_capstone.potlatch.widgets.EndlessListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/base_padding_level"
+        android:alwaysDrawnWithCache="true"
+        android:smoothScrollbar="false"
+        android:scrollingCache="false"
+        android:animationCache="false"
+        android:clipChildren="true"
+        android:clipToPadding="false"
+        android:scrollbarStyle="outsideOverlay"
+        android:animateLayoutChanges="false"
+        android:dividerHeight="@dimen/base_padding_level"
+        android:divider="#00000000"
+        />
+
+    <TextView
+        android:id="@+id/new_gifts_available_popup"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_gravity="bottom"
+        android:layout_marginRight="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        android:textColor="#eee"
+        android:background="#cb000000"
+        android:text="@string/new_gift_chains_available"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/no_search_results"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        android:text="@string/no_search_results"
+        style="@style/typography_subhead"
+        android:visibility="gone"
+        />
+
+    <include layout="@layout/add_gift_fab" />
+    <include layout="@layout/add_gift_from_gallery_fab" />
+</FrameLayout>

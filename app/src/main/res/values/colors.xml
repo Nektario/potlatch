@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Material Design Colors -->
+    <color name="color__indigo_100">#c5cae9</color>
+    <color name="color__indigo_300">#7986cb</color>
+    <color name="color__indigo_500">#3f51b5</color>
+    <color name="color__indigo_700">#303f9f</color>
+    <color name="color__indigo_900">#1a237e</color>
+    <color name="color__light_blue_100">#b3e5fc</color>
+    <color name="color__light_blue_300">#4fc3f7</color>
+    <color name="color__light_blue_500">#03a9f4</color>
+    <color name="color__light_blue_700">#0288d1</color>
+    <color name="color__light_blue_900">#01579b</color>
+    <color name="color__blue_100">#d0d9ff</color>
+    <color name="color__blue_300">#91a7ff</color>
+    <color name="color__blue_500">#5677fc</color>
+    <color name="color__blue_700">#455ede</color>
+    <color name="color__blue_900">#2a36b1</color>
+    <color name="color__purple_100">#e1bee7</color>
+    <color name="color__purple_300">#ba68c8</color>
+    <color name="color__purple_500">#9c27b0</color>
+    <color name="color__purple_700">#7b1fa2</color>
+    <color name="color__purple_900">#4a148c</color>
+    <color name="color__deep_purple_100">#d1c4e9</color>
+    <color name="color__deep_purple_300">#9575cd</color>
+    <color name="color__deep_purple_500">#673ab7</color>
+    <color name="color__deep_purple_700">#512da8</color>
+    <color name="color__deep_purple_900">#311b92</color>
+    <color name="color__deep_purple_A200">#7c4dff</color>
+    <color name="color__deep_purple_A400">#651fff</color>
+    <color name="color__green_100">#a3e9a4</color>
+    <color name="color__green_300">#42bd41</color>
+    <color name="color__green_500">#259b24</color>
+    <color name="color__green_700">#0a7e07</color>
+    <color name="color__green_900">#0d5302</color>
+
+    <color name="color__deep_orange_500">#ff5722</color>
+    <color name="color__yellow_a400">#ffea00</color>
+    <color name="color__white">#fff</color>
+    <color name="color__red_400">#e84e40</color>
+    <color name="color__pink_a100">#ff80ab</color>
+    <color name="color__pink_a200">#ff4081</color>
+    <color name="color__pink_a400">#f50057</color>
+    <color name="color__pink_a700">#c51162</color>
+
+    <!-- Material Design Styles -->
+    <color name="theme_primary__text_color">@color/color__white</color>
+    <color name="theme_primary">@color/color__blue_500</color>
+    <color name="theme_primary_extra_dark">@color/color__blue_900</color>
+    <color name="theme_primary_dark">@color/color__blue_700</color>
+    <color name="theme_primary_light">@color/color__blue_300</color>
+    <color name="theme_primary_faded">@color/color__blue_100</color>
+    <color name="theme_accent_1">@color/color__pink_a100</color>
+    <color name="theme_accent_2">@color/color__pink_a200</color>
+    <color name="body_text_1">#be000000</color>
+    <color name="body_text_2">#8a000000</color>
+    <color name="body_text_3">#60000000</color>
+    <color name="body_text_disabled">#44000000</color>
+    <color name="body_text_1_inverse">#deffffff</color>
+    <color name="body_text_2_inverse">#8affffff</color>
+    <color name="title_text_1">#de000000</color>
+    <color name="title_text_1_inverse">#deffffff</color>
+
+    <color name="icon_unselected_tint">#808080</color>
+    <color name="disabled_upload_button">#ccc</color>
+    <color name="touched_icon_selected_tint">@color/theme_accent_1</color>
+    <color name="flagged_icon_selected_tint">@color/color__pink_a700</color>
+    <color name="followed_user_icon_selected_tint">#ffc107</color>
+
+    <!-- Actionbar -->
+    <color name="actionbar">@color/theme_primary</color>
+    <color name="actionbar_title_text">@color/color__white</color>
+    <color name="actionbar_subtitle_text">@color/body_text_2_inverse</color>
+    <!-- Actionmode -->
+    <color name="action_mode_background">@color/theme_primary_extra_dark</color>
+    <!-- Nav Drawer -->
+    <color name="navdrawer_background">#ffffffff</color>
+    <color name="navdrawer_text_color">@color/body_text_1</color>
+    <color name="navdrawer_text_color_selected">@color/theme_primary</color>
+    <color name="navdrawer_icon_tint">#808080</color>
+    <color name="navdrawer_icon_tint_selected">@color/theme_primary</color>
+
+    <color name="seekbar_track">#60000000</color>
+</resources>

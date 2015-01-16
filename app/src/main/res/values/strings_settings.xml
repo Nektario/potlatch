@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- file name -->
+    <string name="pref_app_prefs_file_name">com.mocca_capstone.potlatch_preferences</string>
+
+    <!-- keys -->
+    <string name="pref_key_app_is_first_time_running">app_is_first_time_running</string>
+    <string name="pref_key_user_hide_flagged_gifts">user_hide_flagged_gifts</string>
+    <string name="pref_key_user_sync_frequency">user_sync_frequency</string>
+
+
+    <!-- Headers -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_hide_flagged_gifts">Hide inappropriate gifts</string>
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>1 minute</item>
+        <item>5 minutes</item>
+        <item>1 hour</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>1</item>
+        <item>5</item>
+        <item>60</item>
+        <item>-1</item>
+    </string-array>
+</resources>
